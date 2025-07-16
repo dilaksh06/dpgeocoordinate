@@ -1,4 +1,4 @@
-import Geo from '@dp/geo-coordinates';
+import Geo from 'dp-geo-coordinates';
 import { useEffect, useRef, useState } from 'react';
 import {
   Button,
@@ -10,7 +10,7 @@ import {
 
 import { insertLocation } from './android/app/src/lib/supabse'; // ✅ used for manual upload
 const SUPABASE_ANON_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdwYXV0dHNlZWNpbHZibnd5bGhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyMTUzOTEsImV4cCI6MjA2Njc5MTM5MX0.l-rjXco63HqjZdV1DD3qG1JF4zxDrf5SCVe35Hnlgdc';
+  '';
 
 export default function App() {
   const [location, setLocation] = useState<any>(null);
